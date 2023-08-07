@@ -1,7 +1,9 @@
+import "../App.css";
+
 const App = () => {
   return (
-    <div className="md:container mx-auto flex items-center justify-center h-max bg-gray-200">
-      <p className=" text-indigo-400 text-2xl">React + Tailwind + Typescript + Electron = ❤</p>
+    <div className="flex flex-1 h-max w-max justify-center items-center">
+      <h1 className="text-white justify-center"> Hello ericko </h1>
     </div>
   );
 };
