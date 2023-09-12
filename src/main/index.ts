@@ -15,6 +15,8 @@ const createWindow = (): void => {
   const mainWindow = new BrowserWindow({
     vibrancy: 'under-window',
     visualEffectState: 'active',
+    width: 1100,
+    height: 600,
     webPreferences: {
       preload: MAIN_WINDOW_PRELOAD_WEBPACK_ENTRY,
     },
