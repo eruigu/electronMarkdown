@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react'
 import runmode, { getLanguage } from '../renderer/runmode';
 
 type Tokens = {

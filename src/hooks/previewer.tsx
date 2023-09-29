@@ -1,9 +1,11 @@
+import './previewer.css'
 import React from 'react'
-import { unified } from 'unified'
-import remarkParse from 'remark-parse'
-import remarkGfm from 'remark-gfm'
-import remarkReact from 'remark-react'
 import RemarkCode from './remark'
+import { unified } from 'unified'
+import remarkGfm from 'remark-gfm'
+import remarkParse from 'remark-parse'
+import remarkReact from 'remark-react'
+import 'github-markdown-css/github-markdown.css'
 import { defaultSchema } from 'hast-util-sanitize'
 
 interface Props {
@@ -18,10 +20,10 @@ const schema = {
   }
 }
 
-const Previewer: React.FC<Props> = (props) => {
+const Preview: React.FC<Props> = (props) => {
   const md = unified()
-    .use(remarkGfm)
     .use(remarkParse)
+    .use(remarkGfm)
     .use(remarkReact, {
       createElement: React.createElement,
       sanitize: schema,
@@ -31,10 +33,8 @@ const Previewer: React.FC<Props> = (props) => {
     })
     .processSync(props.doc).result
 
-    console.log(md)
-  return <div className='p-12 overflow-auto box-border text-[#abb2bf] flex-[0_0_50%]'>
-    <>{md}</> 
-  </div>
+    // console.log(md)
+  return <div className='preview markdown-body'>{md}</div>
 }
 
-export default Previewer
+export default Preview

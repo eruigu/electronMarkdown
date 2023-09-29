@@ -1,5 +1,6 @@
+import "./App.css"
 import Editor from  '../hooks/editor';
-import Previewer from  '../hooks/previwer';
+import Previewer from  '../hooks/previewer';
 import { useState, useCallback } from 'react'
 
 const App = () => {
@@ -12,7 +13,7 @@ const App = () => {
   return (
     <div className="h-full flex flex-row bg-transparent">
       <Editor onChange={handleDocChange} initialDoc={doc} />
-      <Previewer doc={doc}/>
+      <Previewer  doc={doc}/>
     </div>
   )
 }
