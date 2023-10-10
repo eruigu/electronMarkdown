@@ -16,8 +16,8 @@ if (isProd) {
   const mainWindow = createWindow('main', {
     vibrancy: 'under-window',
     visualEffectState: 'active',
-    width: 1300,
-    height: 600,
+    width: 1200,
+    height: 570,
   })
 
   if (isProd) {

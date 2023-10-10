@@ -1,5 +1,6 @@
 # Welcome to nextronMarkdown
-A markdown editior to build with electron.js and next.js
+
+A easy to use markdown editior built with electron.js and next.js
 
 ---
 

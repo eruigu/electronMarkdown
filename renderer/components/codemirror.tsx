@@ -1,17 +1,14 @@
-
 import type React from 'react'
-import { useEffect, useState, useRef } from 'react'
-import { basicSetup } from 'codemirror'
-
 import {tags} from "@lezer/highlight"
-import {HighlightStyle, syntaxHighlighting} from "@codemirror/language"
-
+import { basicSetup } from 'codemirror'
 import { EditorState } from '@codemirror/state'
-import { EditorView, keymap } from '@codemirror/view'
+import { useEffect, useState, useRef } from 'react'
 import { defaultKeymap } from '@codemirror/commands'
-import { markdown, markdownLanguage } from '@codemirror/lang-markdown'
-import { languages } from '@codemirror/language-data'
 import { oneDark } from '@codemirror/theme-one-dark'
+import { EditorView, keymap } from '@codemirror/view'
+import { languages } from '@codemirror/language-data'
+import { markdown, markdownLanguage } from '@codemirror/lang-markdown'
+import {HighlightStyle, syntaxHighlighting} from "@codemirror/language"
 
 export const transparentTheme = EditorView.theme({
   '&': {

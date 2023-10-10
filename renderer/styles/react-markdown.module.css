@@ -12,3 +12,19 @@
   display: list-item;
   text-align: -webkit-match-parent;
 }
+
+.reactMarkDown h1 {
+  border-bottom-width: thin;
+  border-color:#abb2bf;
+}
+
+.reactMarkDown h2 {
+  border-bottom-width: thin;
+  border-color:#abb2bf;
+}
+
+.reactMarkDown h3 {
+  border-bottom-width: thin;
+  border-color:#abb2bf;
+}
+
