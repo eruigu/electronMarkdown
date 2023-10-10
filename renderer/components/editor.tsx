@@ -1,6 +1,7 @@
+
+import React, { useCallback, useEffect } from 'react'
+import { EditorState } from '@codemirror/state'
 import useCodeMirror from './codemirror'
-import React, { useCallback } from 'react'
-import { EditorState } from '@codemirror/state';
 
 interface Props {
   initialDoc: string,
@@ -9,17 +10,24 @@ interface Props {
 
 const Editor: React.FC<Props> = (props) => {
   const { onChange, initialDoc } = props
-
   const handleChange = useCallback(
     (state: EditorState) => onChange(state.doc.toString()),
     [onChange]
   )
-  const [refContainer ] = useCodeMirror<HTMLDivElement>({
+  const [refContainer, editorView] = useCodeMirror<HTMLDivElement>({
     initialDoc: initialDoc,
     onChange: handleChange
   })
 
-  return <div className='h-full flex-[0_0_50%]' ref={refContainer}></div>
+  useEffect(() => {
+    if (editorView) {
+      // Do nothing for now
+    } else {
+      // loading editor
+    }
+  }, [editorView])
+
+  return <div className='border-none h-full flex-[0_0_50%] bg-transparent' ref={refContainer}></div>
 }
 
 export default Editor
