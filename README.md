@@ -1,6 +1,8 @@
 # Welcome to nextronMarkdown
 
-A easy to use markdown editior built with electron.js and next.js
+An easy-to-use markdown editor built with electron.js and next.js
+
+<img width="1503" alt="Screenshot 2023-11-02 at 12 49 22 AM" src="https://github.com/eruigu/nextronMarkdown/assets/60236247/36d46bed-4728-4bbe-a343-0bf8e95a8505">
 
 ---
 
