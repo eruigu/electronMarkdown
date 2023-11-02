@@ -1,8 +1,8 @@
-import Editor from  '../components//editor';
-import Previewer from  '../components/previewer';
-import { useState, useCallback } from 'react'
-import { NextPage } from 'next';
 import Head from 'next/head'
+import { NextPage } from 'next';
+import Editor from  '../components/editor';
+import { useState, useCallback } from 'react'
+import Previewer from  '../components/previewer';
 
 const Home: NextPage = () => {
   const [doc, setDoc] = useState<string>('# Hello, World!\n')

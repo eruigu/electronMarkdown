@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "nextronMarkdown",
-  "description": "A markdown editior for md files",
+  "description": "A markdown editor for md files",
   "version": "1.0.0",
   "author": "Erick Ruigu <erick@ruigu.dev>",
   "main": "app/background.js",
